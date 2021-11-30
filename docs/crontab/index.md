@@ -7,9 +7,9 @@ Crontab is a scheduling service that can automate certain tasks for you like cre
 Simply run ```crontab -e``` as root and you will be see something like this:
 ![cron](/images/cron.png)
 
-The way it works is that you got timers for every minute, hour, day, month and year which you can specify to a specific value. Now the subject requires us to run the script every 10 minutes. We can do it at every 10th minute of the hour.
-
 I highly recommend [this site!](https://crontab.guru/#*/10_*_*_*_*)
+
+The way it works is that you got timers for every minute, hour, day, month and year which you can specify to a specific value. Now the subject requires us to run the script every 10 minutes. We can do so like this:
 
 ```bash
 #Runs every 10th minute of the hour
