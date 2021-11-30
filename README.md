@@ -17,5 +17,5 @@ The project is relatively straight forward, its more that you have to battle wit
 - [Remote SSH](/docs/ssh/index.md)
 - [Sudo logging](/docs/sudo_log/index.md)
 - [Password Policy](/docs/pam/index.md)
-- [Monitoring Script](/docs/monitoring/index.md)
+- [Monitoring Script](/docs/montoring/index.md)
 - [Crontab](/docs/crontab/index.md)
