@@ -25,7 +25,7 @@ Defaults	iolog_dir=/var/log/sudo/
 ```
 
 ## The directories
-When we do this for **EVERY** sudo command that gets executed a new directory is created, which contains the following files:
+When we do this then for **EVERY** sudo command that gets executed a new directory is created, which contains the following files:
 
 ![port](/images/sudo2.png)
 
