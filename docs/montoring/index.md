@@ -61,10 +61,13 @@ There's a few edge cases however that need to be taken into account! The rest is
 ---
 
 ### CPU Physical/Virtual proccesors!
+you can find most of the relevant info with regard to the cpu (virtual and physical) in /proc/cpuinfo. 
+However, the value after 'processor' can seem somewhat misleading in that it ostensibly gives you the number of processors used. 
+In actual fact this is the virtual ID of the processor that the info from there onwards refers to. therefore, if you have multiple processors they will show up on multiple lines. 
+So in order to get the amount of virtual processors that are used by the system all you have to do is use a simple wc -l to count the lines in which the processor shows up. 
 
-My approach of getting the CPU physical & virtual processors might be utterly wrong, I honestly have not found anyone who was able to tell me the right way and I only managed to find the answer via google which gave me the "correct" amount which will usually almost for everyone be 1.
-
-My attempt is technically working but probably wrong because all it really does is check wehter we have that one line or not and yeah, do not do what I did :P
+The amount of physical processors are defined by the 'physicial id'. You could have multiple virtual processors running on a single physical one, in which case the 'processor' value would increment but the physical id would not. 
+Therefore searching for each unique value of physical id would give you the total amount of physical processors. 
 
 ### Disk Usage!
 
